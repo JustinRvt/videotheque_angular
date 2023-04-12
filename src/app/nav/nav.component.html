@@ -1,0 +1,15 @@
+<nav>
+    <!-- Pour que le système de routing passe la classe .active à l'élement du menu lié à la page affichée -->
+    <!-- Afin que les enfants ne soient pas considérés comme actifs, nous configurerons la route de manière exacte -->
+    <a routerLink="" 
+       routerLinkActive="active" 
+       [routerLinkActiveOptions]="{ exact: true }"
+    >
+        Accueil
+    </a>
+    <!-- la directive routerLink crée elle-même les liens des routes de notre application.
+    sa valeur est un string qui correspond au path -->
+    <a routerLink="videotheque" routerLinkActive="active">
+        Voir ma liste de films
+    </a>
+</nav>

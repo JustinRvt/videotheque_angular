@@ -1,0 +1,13 @@
+nav a {
+    padding:1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* La classe .active est appelée par routerLinkActive, l'attribut HTML du lien */
+.active {
+    color:red;
+}

@@ -1,0 +1,15 @@
+<!-- Ici, j'appelle mon composant liste-films en utilisant le préfixe app- -->
+<!-- Nous avons besoin de l'attribut binding pour lier l'objet (listeFilms) envoyé depuis app.component.ts à notre propriété en provenance de notre composant (instanceFilm) -->
+
+<!-- <app-liste-films [instanceFilm]="film1"></app-liste-films>
+<app-liste-films [instanceFilm]="film2"></app-liste-films>
+<app-liste-films [instanceFilm]="film3"></app-liste-films> -->
+
+
+<!-- HEADER -->
+<app-header></app-header>
+<!-- MAIN -->
+<!-- grâce à router-outlet, c'est l'application (via le routeur) qui décide quels seront les composants affichés -->
+<router-outlet></router-outlet>
+<!-- FOOTER -->
+<app-footer></app-footer>

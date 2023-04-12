@@ -1,0 +1,10 @@
+<!-- On utilise la directive *ngFor afin de créer une boucle qui passera dans le contenu de listeFilms (soit le tableau contenant les objets Film) -->
+<!-- L'attribut binding instanceFilm du composant list-films récupère les valeurs des propriétés de chacun des objets au fur et à mesure que la boucle incrémente -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <app-liste-films
+      *ngFor="let film of listeFilms"
+      [instanceFilm]="film"
+    ></app-liste-films>
+  </div>
+</div>
