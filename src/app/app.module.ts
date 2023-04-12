@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AccueilComponent } from './accueil/accueil.component';
 import { NavComponent } from './nav/nav.component';
+import { PageNonTrouveeComponent } from './page-non-trouvee/page-non-trouvee.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavComponent } from './nav/nav.component';
     HeaderComponent,
     FooterComponent,
     AccueilComponent,
-    NavComponent
+    NavComponent,
+    PageNonTrouveeComponent
   ],
   imports: [
     BrowserModule,

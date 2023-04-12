@@ -4,6 +4,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AffichageListeFilmsComponent } from "./affichage-liste-films/affichage-liste-films.component";
 import { AccueilComponent } from "./accueil/accueil.component";
+import { PageNonTrouveeComponent } from "./page-non-trouvee/page-non-trouvee.component";
 
 
 const routes : Routes = [
@@ -18,6 +19,12 @@ const routes : Routes = [
         // Pour la page d'accueil, on laisse le chemin vide
         path: '',
         component: AccueilComponent
+    },
+    // pour gérer les pages 404, on utilise le path suivant : **
+    // PourAngular, cela signifie une route bancale
+    {
+        path : '**',
+        component : PageNonTrouveeComponent
     }
 ];
 // 1er étape : je déclare ma classe avec un nouveau décorateur : @NgModule()
